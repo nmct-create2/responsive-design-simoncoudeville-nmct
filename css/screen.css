@@ -349,6 +349,18 @@ a:focus {
     align-content: space-between;
 }
 
+/*
+    Objects: List
+    ---
+    Small reusable object to remove default list styling from lists
+*/
+
+.o-list {
+    list-style: none;
+    padding: 0;
+}
+
+
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
@@ -373,6 +385,77 @@ a:focus {
     }
 }
 
+/*
+    Component: Nav
+    ---
+    Main navigation of the site
+*/
+
+.c-nav {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.c-nav--meta {
+    font-size: 16px;
+}
+
+.c-nav__link {
+    display: block;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.c-nav__link,
+.c-nav__link:visited,
+.c-nav__link:active {
+    color: #202024;
+}
+
+.c-nav__link--meta,
+.c-nav__link--meta:visited,
+.c-nav__link--meta:active {
+    color: #6C6C75;
+}
+
+.is-current .c-nav__link,
+.c-nav__link:hover,
+.c-nav__link:focus {
+    color: #5051db;
+}
+
+@media (min-width: 768px) {
+    .c-nav__list {
+        display: flex;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    .c-nav__link {
+        padding: 8px 16px;
+    }
+}
+
+/*
+    Component: header
+    ---
+    Main header of the website
+*/
+
+.c-header__nav {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .c-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-header__nav {
+        display: block;
+    }
+}
 
 /*------------------------------------*\
   #UTILITIES
