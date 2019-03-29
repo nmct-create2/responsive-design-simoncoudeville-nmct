@@ -353,6 +353,27 @@ a:focus {
   #COMPONENTS
 \*------------------------------------*/
 
+/*
+    Component: Logo
+    ---
+    Website main logo
+*/
+
+.c-logo {
+    height: 32px;
+}
+
+.c-logo__symbol {
+    height: inherit;
+}
+
+@media (min-width: 768px) {
+    .c-logo {
+        height: 40px;
+    }
+}
+
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
